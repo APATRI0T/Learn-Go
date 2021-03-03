@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 /*
 Мапы
@@ -48,6 +50,18 @@ func main() {
 	newUser := tUser{4, "gogol", "Гоголь как его там, по батюшке.. забыл", "gogol@mail.ru", 90}
 	AddUser(users, newUser)
 	fmt.Println("====================\n", users)
+
+	var (
+		tmpStruct tUser
+		newMap    map[string]tUser
+	)
+	newMap = make(map[string]tUser)
+	newMap2 := map[string]tUser{}
+	tmpStruct = tUser{5, "evtushenko", "Евтушенко ляляля", "eve@mail.ru", 88}
+	AddUser(newMap, tmpStruct)
+	AddUser(newMap2, tmpStruct)
+	fmt.Println("====================\n", newMap)
+	fmt.Println("====================\n", newMap2)
 }
 
 func GetUserId(m map[string]tUser, UserName string) int {
@@ -75,3 +89,11 @@ func AddUser(m map[string]tUser, user tUser) int {
 		return user.id
 	}
 }
+
+/*
+Создать мапы стркутур
+Мапу через make
+а структуру литералом
+
+
+*/
