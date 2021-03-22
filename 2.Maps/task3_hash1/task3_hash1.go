@@ -55,5 +55,6 @@ func GetList(m map[string]int64) string {
 	for key, v := range m {
 		str += "[" + key + "] -> " + strconv.Itoa(int(v)) + "\n"
 	}
+
 	return str
 }
