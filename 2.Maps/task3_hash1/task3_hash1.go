@@ -29,12 +29,11 @@ func Run() {
 	fmt.Println(GetList(m))
 }
 
-func FillMap(m map[string]int64) map[string]int64 {
+func FillMap(m map[string]int64) {
 	Add(m, "American Express", 378282246310005)
 	Add(m, "Master Card", 5105105105105100)
 	Add(m, "Visa", 4222222222222)
 	Add(m, "JCB", 3530111333300000)
-	return m
 }
 
 func Add(m map[string]int64, key string, v int64) {
