@@ -1,4 +1,4 @@
-package main
+package task2
 
 import (
 	"crypto/md5"
@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func main() {
+func Run() {
 	var HashTable = map[string]string{"md5hash": "value"}
 
 	Value := "password"

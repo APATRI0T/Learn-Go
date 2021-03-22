@@ -1,4 +1,4 @@
-package main
+package task1
 
 import (
 	"fmt"
@@ -35,7 +35,7 @@ type tUser struct {
 	age      int
 }
 
-func main() {
+func Run() {
 
 	var users = map[string]tUser{
 		"serg":   {1, "serg", "Худояров Сергей Владимирович", "shudoyarov@gmail.com", 31},
